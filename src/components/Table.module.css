@@ -1,0 +1,80 @@
+.container {
+  width: 80vw;
+  max-height: 80vh;
+  box-shadow: 0 5px 15px 0 hsla(0, 0%, 0%, 0.15);
+  overflow: auto;
+}
+
+.caretIcon {
+  margin: auto 0 auto auto;
+}
+
+.colorSplotch {
+  display: inline-block;
+  margin-right: 12px;
+  height: 11px;
+  width: 11px;
+  border: 1px solid black;
+}
+
+table {
+  display: grid;
+  width: 100%;
+  border-collapse: collapse;
+  grid-template-columns: 
+    minmax(50px, .75fr)
+    minmax(100px, 1.5fr)
+    minmax(100px, 1.5fr)
+    minmax(150px, 3fr)
+    minmax(150px, 3fr)
+    minmax(150px, 5fr)
+    minmax(150px, 1fr);
+}
+
+thead,
+tbody,
+tr {
+  display: contents;
+}
+
+th {
+  display: flex;
+  border-bottom: 2px solid hsl(206, 20%, 93%);
+}
+
+tr td {
+  border-bottom: 1px solid hsl(206, 20%, 93%);
+}
+
+td, th { 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+th {
+  position: sticky;
+  top: 0;
+  z-index: 1;
+  user-select: none;
+  background: hsl(206, 33%, 96%);
+  text-align: left;
+  font-weight: normal;
+  color: hsl(240, 1%, 49%);
+  padding: 14px;
+}
+
+th:hover {
+  cursor: pointer;
+}
+
+td {
+  text-align: left;
+  padding: 14px 14px;
+  color: hsl(210, 2%, 37%)
+}
+
+a {
+  text-decoration: none;
+  color: hsl(210, 64%, 49%);
+}
