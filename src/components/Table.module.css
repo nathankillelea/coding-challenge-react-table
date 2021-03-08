@@ -5,18 +5,6 @@
   overflow: auto;
 }
 
-.caretIcon {
-  margin: auto 0 auto auto;
-}
-
-.colorSplotch {
-  display: inline-block;
-  margin-right: 12px;
-  height: 11px;
-  width: 11px;
-  border: 1px solid black;
-}
-
 table {
   display: grid;
   width: 100%;
@@ -37,22 +25,12 @@ tr {
   display: contents;
 }
 
-th {
-  display: flex;
-  border-bottom: 2px solid hsl(206, 20%, 93%);
-}
-
 tr td {
   border-bottom: 1px solid hsl(206, 20%, 93%);
 }
 
-td, th { 
-  text-overflow: ellipsis;
-  overflow: hidden;
-  white-space: nowrap;
-}
-
 th {
+  display: flex;
   position: sticky;
   top: 0;
   z-index: 1;
@@ -62,10 +40,15 @@ th {
   font-weight: normal;
   color: hsl(240, 1%, 49%);
   padding: 14px;
+  border-bottom: 2px solid hsl(206, 20%, 93%);
 }
 
 th:hover {
   cursor: pointer;
+}
+
+.caretIcon {
+  margin: auto 0 auto auto;
 }
 
 td {
@@ -74,7 +57,22 @@ td {
   color: hsl(210, 2%, 37%)
 }
 
+td, th { 
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
 a {
   text-decoration: none;
   color: hsl(210, 64%, 49%);
 }
+
+.colorSplotch {
+  display: inline-block;
+  margin-right: 12px;
+  height: 11px;
+  width: 11px;
+  border: 1px solid black;
+}
+

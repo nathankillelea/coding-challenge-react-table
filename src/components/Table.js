@@ -133,12 +133,42 @@ const Table = ({data, setData, filter}) => {
       <table>
         <thead>
           <tr>
-            {sort === 'ID_ASC' ? <th onClick={() => setSort('ID_DESC')}>ID<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='ID_DESC' ? <th onClick={() => setSort('ID_ASC')}>ID<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('ID_ASC')}>ID</th> }
-            {sort === 'FIRST_NAME_ASC' ? <th onClick={() => setSort('FIRST_NAME_DESC')}>FIRST NAME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='FIRST_NAME_DESC' ? <th onClick={() => setSort('FIRST_NAME_ASC')}>FIRST NAME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('FIRST_NAME_ASC')}>FIRST NAME</th> }
-            {sort === 'LAST_NAME_ASC' ? <th onClick={() => setSort('LAST_NAME_DESC')}>LAST NAME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='LAST_NAME_DESC' ? <th onClick={() => setSort('LAST_NAME_ASC')}>LAST NAME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('LAST_NAME_ASC')}>LAST NAME</th> }
-            {sort === 'EMAIL_ASC' ? <th onClick={() => setSort('EMAIL_DESC')}>EMAIL<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='EMAIL_DESC' ? <th onClick={() => setSort('EMAIL_ASC')}>EMAIL<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('EMAIL_ASC')}>EMAIL</th> }
-            {sort === 'JOB_TITLE_ASC' ? <th onClick={() => setSort('JOB_TITLE_DESC')}>JOB TITLE<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='JOB_TITLE_DESC' ? <th onClick={() => setSort('JOB_TITLE_ASC')}>JOB TITLE<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('JOB_TITLE_ASC')}>JOB TITLE</th> }
-            {sort === 'FAVORITE_ANIME_ASC' ? <th onClick={() => setSort('FAVORITE_ANIME_DESC')}>FAVORITE ANIME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th> : sort==='FAVORITE_ANIME_DESC' ? <th onClick={() => setSort('FAVORITE_ANIME_ASC')}>FAVORITE ANIME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th> : <th onClick={() => setSort('FAVORITE_ANIME_ASC')}>FAVORITE ANIME</th> }
+            {sort === 'ID_ASC'
+              ? <th onClick={() => setSort('ID_DESC')}>ID<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='ID_DESC'
+              ? <th onClick={() => setSort('ID_ASC')}>ID<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('ID_ASC')}>ID</th> 
+            }
+            {sort === 'FIRST_NAME_ASC'
+              ? <th onClick={() => setSort('FIRST_NAME_DESC')}>FIRST NAME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='FIRST_NAME_DESC'
+              ? <th onClick={() => setSort('FIRST_NAME_ASC')}>FIRST NAME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('FIRST_NAME_ASC')}>FIRST NAME</th> 
+            }
+            {sort === 'LAST_NAME_ASC'
+              ? <th onClick={() => setSort('LAST_NAME_DESC')}>LAST NAME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='LAST_NAME_DESC'
+              ? <th onClick={() => setSort('LAST_NAME_ASC')}>LAST NAME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('LAST_NAME_ASC')}>LAST NAME</th> 
+            }
+            {sort === 'EMAIL_ASC'
+              ? <th onClick={() => setSort('EMAIL_DESC')}>EMAIL<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='EMAIL_DESC'
+              ? <th onClick={() => setSort('EMAIL_ASC')}>EMAIL<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('EMAIL_ASC')}>EMAIL</th>
+            }
+            {sort === 'JOB_TITLE_ASC'
+              ? <th onClick={() => setSort('JOB_TITLE_DESC')}>JOB TITLE<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='JOB_TITLE_DESC'
+              ? <th onClick={() => setSort('JOB_TITLE_ASC')}>JOB TITLE<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('JOB_TITLE_ASC')}>JOB TITLE</th>
+            }
+            {sort === 'FAVORITE_ANIME_ASC'
+              ? <th onClick={() => setSort('FAVORITE_ANIME_DESC')}>FAVORITE ANIME<FontAwesomeIcon icon={faCaretUp} className={styles.caretIcon} /></th>
+              : sort==='FAVORITE_ANIME_DESC'
+              ? <th onClick={() => setSort('FAVORITE_ANIME_ASC')}>FAVORITE ANIME<FontAwesomeIcon icon={faCaretDown} className={styles.caretIcon} /></th>
+              : <th onClick={() => setSort('FAVORITE_ANIME_ASC')}>FAVORITE ANIME</th>
+            }
             <th>SECTION</th>
           </tr>
         </thead>
